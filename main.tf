@@ -9,7 +9,7 @@ provider "aws" {
 resource "aws_instance" "myFirstInstance" {
   ami           = var.ami_id
   instance_type = var.instance_type
-  count = 2
+  count = 1
   tags= {
     Name = var.tag_name
   }
